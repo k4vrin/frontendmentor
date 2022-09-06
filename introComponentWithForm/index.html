@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+	</head>
+	<body>
+		<section class="sign-up">
+			<div class="container">
+				<div class="text-box">
+					<h2 class="heading-primary">
+						Learn to code by watching others
+					</h2>
+					<p class="text">
+						See how experienced developers solve problems in
+						real-time. Watching scripted tutorials is great, but
+						understanding how developers think is invaluable.
+					</p>
+				</div>
+				<div class="promote">
+					<p class="promote-text">
+						<strong class="promote-bold">Try it free 7 days</strong>
+						then $20/mo. thereafter
+					</p>
+				</div>
+				<form
+					id="form"
+					action="#"
+					name="signup-form"
+					class="sign-up-form"
+					novalidate
+				>
+					<div class="input-box">
+						<input
+							class="input"
+							id="first-name"
+							type="text"
+							placeholder=" "
+							name="first-name"
+							aria-label="First Name"
+						/>
+						<label for="first-name">First Name</label>
+						<p class="error-message">Error</p>
+					</div>
+					<div class="input-box">
+						<input
+							class="input"
+							id="last-name"
+							type="text"
+							placeholder=" "
+							name="last-name"
+							aria-label="Last Name"
+						/>
+						<label for="last-name">Last Name</label>
+						<p class="error-message">Error</p>
+					</div>
+					<div class="input-box">
+						<input
+							class="input"
+							id="email"
+							type="email"
+							placeholder=" "
+							name="email"
+							aria-label="Email"
+						/>
+						<label for="email">Email address</label>
+						<p class="error-message">Error</p>
+					</div>
+					<div class="input-box">
+						<input
+							class="input"
+							id="password"
+							type="password"
+							placeholder=" "
+							name="password"
+							aria-label="Password"
+						/>
+						<label for="password">Password</label>
+						<p class="error-message">Error</p>
+					</div>
+					<button class="btn">Claim your free trial</button>
+					<p class="tos">
+						By clicking the button, you are agreeing to our
+						<a href="#">Terms and Services</a>
+					</p>
+				</form>
+			</div>
+			<div class="modal hidden">
+				<button class="close-modal">&times;</button>
+				<svg
+					class="check-spinner"
+					viewBox="0 0 100 100"
+					width="100px"
+					height="100px"
+				>
+					<defs>
+						<linearGradient
+							id="cs-grad-1"
+							x1="0.5"
+							y1="0"
+							x2="0.5"
+							y2="1"
+						>
+							<stop offset="0%" stop-color="hsl(0,0%,100%)" />
+							<stop offset="100%" stop-color="hsl(0,0%,80%)" />
+						</linearGradient>
+						<linearGradient
+							id="cs-grad-2a"
+							x1="0.5"
+							y1="0"
+							x2="0.5"
+							y2="1"
+							gradientTransform="rotate(90,0.5,0.5)"
+						>
+							<stop offset="0%" stop-color="hsl(123,90%,55%)" />
+							<stop offset="100%" stop-color="hsl(183,90%,25%)" />
+						</linearGradient>
+						<linearGradient
+							id="cs-grad-2b"
+							x1="0.5"
+							y1="0"
+							x2="0.5"
+							y2="1"
+						>
+							<stop offset="0%" stop-color="hsl(123,90%,55%)" />
+							<stop offset="100%" stop-color="hsl(183,90%,25%)" />
+						</linearGradient>
+					</defs>
+					<circle
+						class="check-spinner__circle"
+						cx="50"
+						cy="50"
+						r="0"
+						fill="url(#cs-grad-1)"
+					/>
+					<path
+						class="check-spinner__worm-b"
+						d="M 17.473 17.473 C 25.797 9.15 37.297 4 50 4 C 75.4 4 96 24.6 96 50 C 96 75.4 75.4 96 50 96 C 24.6 96 4 75.4 4 50 C 4 44.253 6.909 36.33 12.5 35 C 21.269 32.913 35 50 35 50 L 45 60 L 65 40"
+						fill="none"
+						stroke="url(#cs-grad-2b)"
+						stroke-width="8"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-dasharray="0 0 72.2 341.3"
+					/>
+				</svg>
+				<p class="modal-heading">Thank you!</p>
+				<p class="modal-text">an email has been sent to you</p>
+			</div>
+			<div class="overlay hidden"></div>
+		</section>
+
+		<footer class="footer">
+			<p class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/KavrinDEV">Kavrin</a>.
+			</p>
+		</footer>
+	</body>
+	<script src="js/script.js"></script>
+</html>

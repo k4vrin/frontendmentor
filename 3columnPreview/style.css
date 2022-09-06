@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 10px; */
+	/* 10px / 16px = 0.625 = 62.5% */
+	/* Percentage of user's browser font-size setting */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lexend Deca", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	background-color: #f2f2f2;
+	min-width: 320px;
+	/* min-height: 100vh; */
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: #3e52a3;
+}
+
+.products {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	margin: 2.4rem 1.6rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	/* margin-top: 12rem; */
+	flex-wrap: wrap;
+}
+
+.product {
+	max-width: 30.7rem;
+	height: 50rem;
+	padding: 4.8rem;
+	border-radius: 5px;
+}
+
+.product h2 {
+	color: #f2f2f2;
+	font-family: "Big Shoulders Display", cursive;
+	font-size: 4rem;
+	margin-top: 3.5rem;
+	text-transform: uppercase;
+}
+
+.product p {
+	color: #ffffffbf;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.5rem;
+	margin-top: 2.5rem;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.5rem;
+	margin-top: 8.3rem;
+	padding: 1.5rem 3rem;
+	background-color: #f2f2f2;
+	border: 0.2rem solid #f2f2f2;
+	border-radius: 25px;
+	transition: all 0.3s;
+}
+
+.sedan {
+	background-color: #e38826;
+}
+.suv {
+	background-color: #006970;
+}
+.luxury {
+	background-color: #004241;
+}
+
+.sedan .btn {
+	color: #e38826;
+}
+.suv .btn {
+	color: #006970;
+}
+.luxury .btn {
+	color: #004241;
+}
+
+.sedan .btn:hover,
+.suv .btn:hover,
+.luxury .btn:hover {
+	background-color: #00000000;
+	color: #f2f2f2;
+}

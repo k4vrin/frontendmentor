@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution](https://github.com/KavrinDEV/testimonials-grid-section)
--   [Live Site](https://kavrindev.github.io/testimonials-grid-section/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/testimonialsGridSection)
+-   [Live Site](https://kavrindev.github.io/frontendmentor/testimonialsGridSection)
 
 ## My process
 

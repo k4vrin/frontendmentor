@@ -28,4 +28,6 @@ Users should be able to:
 
 ### Links
 
--   [Live Site](https://kavrindev.github.io/faq-accordion-card/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/accordionCard)
+
+-   [Live Site](https://kavrindev.github.io/frontendmentor/accordionCard)

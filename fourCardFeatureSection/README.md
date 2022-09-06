@@ -27,9 +27,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution](https://github.com/KavrinDEV/four-card-feature-section)
--   [Live Site](https://kavrindev.github.io/four-card-feature-section/)
--   [Animation Branch Live Site](https://fourcardanimation.netlify.app/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/fourCardFeatureSection)
+-   [Live Site](https://kavrindev.github.io/frontendmentor/fourCardFeatureSection)
 
 ## My process
 

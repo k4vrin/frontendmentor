@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution](https://github.com/KavrinDEV/intro-component-with-sign-up-form)
--   [Live Site](https://kavrindev.github.io/intro-component-with-sign-up-form/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/introComponentWithForm)
+-   [Live Site](https://kavrindev.github.io/frontendmentor/introComponentWithForm/)
 
 ### Built with
 

@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution](https://github.com/KavrinDEV/social-media-dashboard-with-theme-switcher)
--   [Live Site](https://kavrindev.github.io/social-media-dashboard-with-theme-switcher/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/socialMediaDashboard)
+-   [Live Site](https://kavrindev.github.io/frontendmentor/socialMediaDashboard/)
 
 ## My process
 

@@ -24,7 +24,9 @@ Users should be able to:
 
 ### Links
 
--   Live Site URL: [kavrindev.github.io](https://kavrindev.github.io/3-column-preview-card-component/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/3columnPreview)
+
+-   [Live Site](https://kavrindev.github.io/frontendmentor/3columnPreview)
 
 ## Built with
 

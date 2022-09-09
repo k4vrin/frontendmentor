@@ -13,7 +13,7 @@ function loadData() {
 function createCard(item) {
 	const gridEl = document.getElementById("gridEl");
 	const url = item.internalHost === true ? `./${item.name}` : item.url;
-	const image = `./${item.name}/design/desktop-design.jpg`;
+	const image = `./${item.name}/design/desktop-preview.jpg`;
 	const repo =
 		item.internalHost === true
 			? `https://github.com/kavrinDev/frontendmentor/tree/main/${item.name}`

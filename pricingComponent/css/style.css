@@ -1,0 +1,350 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 10px; */
+
+	/* 10px / 16px = 0.625 = 62.5% */
+	/* Percentage of user's browser font-size setting */
+	font-size: 62.5%;
+}
+
+:root {
+	--text-secondary-color: #6e728e;
+	--text-primary-color: #4a4d60;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1;
+	font-weight: 700;
+	min-height: 100vh;
+	min-width: 320px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: #f7f7fe;
+	background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: right 0 top 0, left 0 bottom 0;
+}
+
+/* Section */
+
+.pricing {
+	max-width: 144rem;
+	margin: 6.4rem auto;
+}
+
+/* Header */
+
+.pricing__heading {
+	font-size: 3.2rem;
+	text-align: center;
+	color: var(--text-secondary-color);
+}
+
+.pricing__toggle-box {
+	margin-top: 4rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.4rem;
+}
+
+.switch {
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 4.8rem;
+	height: 2.4rem;
+	border-radius: 20px;
+
+	background-image: linear-gradient(to right bottom, #a2a7f0, #696edd);
+
+	transition: all 0.5s;
+}
+
+.switch::after {
+	content: "";
+	position: absolute;
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	top: 50%;
+	left: 0.3rem;
+
+	transform: translateY(-50%);
+
+	background-color: #fff;
+
+	transition: all 0.5s;
+}
+
+.switch:hover {
+	cursor: pointer;
+	opacity: 50%;
+}
+
+.label {
+	font-size: 1.4rem;
+
+	color: var(--text-primary-color);
+
+	opacity: 50%;
+}
+
+.checkbox:checked + .switch::after {
+	left: 2.7rem;
+}
+.checkbox {
+	display: none;
+}
+
+.pricing__header .checkbox:checked ~ .pricing__card {
+	color: red;
+}
+
+/* Cards */
+
+.pricing__cards-container {
+	min-height: 50rem;
+	width: 100%;
+	max-width: 105rem;
+	margin: 6.4rem auto 0;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: stretch;
+	align-items: center;
+
+	text-align: center;
+}
+
+.card__header {
+	font-size: 1.8rem;
+}
+
+.card__price {
+	margin: 2.4rem auto 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	transition: all 0.3s ease-in;
+}
+
+.price {
+	font-size: 7.2rem;
+	letter-spacing: -2px;
+}
+
+.dollar {
+	font-size: 4rem;
+}
+
+.card__info-box {
+	margin-top: 3.2rem;
+}
+
+.card__info {
+	font-size: 1.5rem;
+	border-top: 0.1rem solid;
+	padding: 1.2rem;
+	line-height: 2.1;
+}
+.card__info:last-of-type {
+	border-bottom: 0.1rem solid;
+}
+
+.card__btn {
+	position: relative;
+	padding: 1.4rem 6.6rem;
+	margin-top: 3.2rem;
+	border: 0.1rem solid;
+	border-color: transparent;
+	border-radius: 0.6rem;
+}
+
+.card__btn-link:link,
+.card__btn-link:visited {
+	display: block;
+
+	font-size: 1.3rem;
+	text-decoration: none;
+
+	transition: all 0.5s;
+}
+
+/* First and Third Cards */
+
+.pricing__card:not(:nth-of-type(2)) {
+	background-color: #fff;
+	color: var(--text-secondary-color);
+
+	padding: 3.1rem;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__info {
+	border-color: #6e728e40;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__price {
+	color: var(--text-primary-color);
+}
+
+.pricing__card:first-of-type {
+	border-radius: 1rem 0 0 1rem;
+}
+
+.pricing__card:last-of-type {
+	border-radius: 0 1rem 1rem 0;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn {
+	background-image: linear-gradient(to right bottom, #a2a7f0, #696edd);
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn::after {
+	visibility: hidden;
+	position: absolute;
+	content: "";
+	border: 0.1rem solid;
+	border-color: transparent;
+	border-radius: 0.6rem;
+	top: -1px;
+	right: -1px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn .card__btn-link::after {
+	visibility: hidden;
+	position: absolute;
+	content: "Learn More";
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+
+	transition: all 0.5s;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn:hover::after {
+	visibility: visible;
+	border-color: #6d72de;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn:hover .card__btn-link::after {
+	visibility: visible;
+	color: #6d72de;
+	z-index: 10;
+}
+
+.pricing__card:not(:nth-of-type(2)) .card__btn-link:link,
+.pricing__card:not(:nth-of-type(2)) .card__btn-link:visited {
+	color: #fff;
+}
+
+/* Second Card */
+
+.pricing__card:nth-of-type(2) {
+	background-image: linear-gradient(to right bottom, #a2a7f0, #696edd);
+
+	align-self: stretch;
+
+	border-radius: 1rem;
+	padding: 5.5rem 3.1rem;
+	color: #fff;
+}
+
+.pricing__card:nth-of-type(2) .card__info {
+	border-color: #ffffff40;
+}
+
+.pricing__card:nth-of-type(2) .card__btn {
+	background-color: #fff;
+
+	transition: all 0.5s;
+}
+
+.pricing__card:nth-of-type(2) .card__btn-link:link,
+.pricing__card:nth-of-type(2) .card__btn-link:visited {
+	color: #6d72de;
+}
+
+.pricing__card:nth-of-type(2) .card__btn:hover {
+	cursor: pointer;
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.pricing__card:nth-of-type(2) .card__btn:hover .card__btn-link {
+	color: #fff;
+}
+
+/* Footer */
+
+.attribution {
+	margin: 6.4rem auto 3.2rem;
+}
+
+.attribution__text {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution__link {
+	color: #6d72de;
+	text-decoration: none;
+}
+
+/**************************/
+/* BELOW 992px (Tablets) */
+/**************************/
+
+@media (max-width: 62em) {
+	.pricing__cards-container {
+		grid-template-columns: 1fr;
+		gap: 3.2rem;
+	}
+
+	.pricing {
+		max-width: 40rem;
+
+		width: calc(100% - 2.4rem);
+	}
+
+	.pricing__card:first-of-type,
+	.pricing__card:nth-of-type(2),
+	.pricing__card:last-of-type {
+		border-radius: 1rem;
+	}
+
+	.pricing__card:nth-of-type(2) {
+		align-self: auto;
+	}
+
+	.pricing__card:not(:nth-of-type(2)) .card__btn .card__btn-link::after {
+		top: 49%;
+	}
+
+	body {
+		background-position: right -20rem top -3rem, left -14rem bottom 0;
+	}
+
+	.pricing__card:not(:nth-of-type(2)),
+	.pricing__card:nth-of-type(2) {
+		padding: 4.2rem 3.1rem;
+	}
+}

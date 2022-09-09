@@ -7,7 +7,7 @@
 
 	--bs-aqua: hsl;
 	--fs-body: 1rem;
-	--fs-p: 1.125rem;
+	--fs-p: 62.5%;
 	--pad-ver: 10vh;
 	--pad-hor: 14vw;
 	--ff-primary: "Lexend Deca", sans-serif;
@@ -61,6 +61,7 @@ a {
 
 body {
 	width: 100%;
+	min-width: 320px;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -75,7 +76,7 @@ body {
 }
 
 .fm_logo {
-	width: min(50vw, 250px);
+	width: min(100%, 30rem);
 }
 
 .header {
@@ -90,11 +91,12 @@ body {
 
 .title {
 	font-size: clamp(1.5rem, calc(0.9718rem + 2.2535vw), 3rem);
-	margin-bottom: 0.8em;
+	margin-bottom: 1rem;
 }
 
 .intro {
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
+	font-size: clamp(1.1rem, calc(0.8rem + 1.2535vw), 1.6rem);
 }
 
 .grid {

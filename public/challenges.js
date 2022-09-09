@@ -43,4 +43,11 @@ export const challenges = [
 		internalHost: true,
 		id: 6,
 	},
+	{
+		name: "pricingComponent",
+		title: "Pricing component with toggle",
+		level: "Junior",
+		internalHost: true,
+		id: 7,
+	},
 ];

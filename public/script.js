@@ -22,7 +22,7 @@ function createCard(item) {
 	const cardHtml = `
     <li class="card">
       <div class="image">
-        <img src=${image} alt=""/>
+        <img src=${image} alt="preview image"/>
       </div>
       <div class="text">            
         <h2>

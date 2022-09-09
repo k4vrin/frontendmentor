@@ -83,6 +83,12 @@ function openModal() {
 function closeModal() {
 	modal.classList.add("hidden");
 	overlay.classList.add("hidden");
+
+	inputs.forEach((input) => {
+		input.innerHTML = "";
+		const inputBox = input.parentElement;
+		inputBox.className = "input-box";
+	});
 }
 
 //Event Listeners

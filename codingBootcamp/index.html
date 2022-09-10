@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+	</head>
+	<body>
+		<main>
+			<section class="testimonial">
+				<div class="text-box">
+					<p class="description">
+						“ I’ve been interested in coding for a while but never
+						taken the jump, until now. I couldn’t recommend this
+						course enough. I’m now in the job of my dreams and so
+						excited about the future. ”
+					</p>
+					<p class="credits">
+						<span class="name">Tanya Sinclair</span>
+						<span class="job">UX Engineer</span>
+					</p>
+				</div>
+				<div class="slider-box">
+					<div
+						class="img img-left"
+						role="img "
+						aria-label="student picture"
+					>
+						<div class="btn-box">
+							<button class="btn btn-left" id="btnLeft">
+								&lt;
+							</button>
+							<button class="btn btn-right" id="btnRight">
+								&gt;
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
-
-  Tanya Sinclair
-  UX Engineer
-
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
-
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<footer class="footer">
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/kavrindev">Kavrin</a>.
+			</div>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
 </html>

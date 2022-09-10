@@ -38,7 +38,7 @@ export const challenges = [
 	},
 	{
 		name: "socialMediaDashboard",
-		title: "social media dashboard with theme switcher",
+		title: "Social media dashboard with theme switcher",
 		level: "Junior",
 		internalHost: true,
 		id: 6,
@@ -49,5 +49,12 @@ export const challenges = [
 		level: "Junior",
 		internalHost: true,
 		id: 7,
+	},
+	{
+		name: "codingBootcamp",
+		title: "Coding bootcamp testimonials slider",
+		level: "Junior",
+		internalHost: true,
+		id: 8,
 	},
 ];

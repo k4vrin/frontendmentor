@@ -15,3 +15,4 @@ GitHub landing page: [https://kavrindev.github.io/frontendmentor/](https://kavri
 | 5   | [Intro component with sign up](https://kavrindev.github.io/frontendmentor/introComponentWithForm/)             | [Link to GitHub repo](https://github.com/kavrindev/frontendmentor/tree/main/introComponentWithForm)  |
 | 6   | [social media dashboard with theme switcher](https://kavrindev.github.io/frontendmentor/socialMediaDashboard/) | [Link to GitHub repo](https://github.com/kavrindev/frontendmentor/tree/main/socialMediaDashboard)    |
 | 7   | [Pricing component with toggle](https://kavrindev.github.io/frontendmentor/pricingComponent/)                  | [Link to GitHub repo](https://github.com/kavrindev/frontendmentor/tree/main/pricingComponent)        |
+| 8   | [Coding bootcamp testimonials slider](https://kavrindev.github.io/frontendmentor/codingBootcamp/)              | [Link to GitHub repo](https://github.com/kavrindev/frontendmentor/tree/main/codingBootcamp)          |

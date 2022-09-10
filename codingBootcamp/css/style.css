@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 10px; */
+
+	/* 10px / 16px = 0.625 = 62.5% */
+	/* Percentage of user's browser font-size setting */
+	font-size: 62.5%;
+}
+
+html[data-theme="light"] {
+	--background-color: #fff;
+	--primary-text-color: #202047;
+	--secondary-text-color: #b9b9ce;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1;
+	font-weight: 500;
+	min-width: 320px;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url(../images/pattern-curve.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 0 left 0;
+}
+
+.testimonial {
+	min-height: 90vh;
+	max-width: 144rem;
+
+	grid-template-columns: 1fr 1.4fr;
+	display: grid;
+	grid-template-rows: 100%;
+	justify-content: center;
+	/* align-content: center; */
+	align-items: center;
+	justify-items: center;
+
+	margin: 6rem auto 1.2rem;
+}
+
+.text-box {
+	max-width: 64rem;
+	min-height: 35.4rem;
+
+	background-image: url(../images/pattern-quotes.svg);
+	background-repeat: no-repeat;
+	background-position: top 0.8rem left 19%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+
+	margin-right: -14rem;
+
+	transition: all 0.5s ease-in-out;
+}
+
+.text-box-transform {
+	transform: translate(-100rem, 0);
+	opacity: 0;
+}
+
+.description {
+	font-size: 3.2rem;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 2.4rem;
+	color: var(--primary-text-color);
+	z-index: 1;
+}
+
+.credits {
+	line-height: 1.5;
+	font-size: 2rem;
+	margin-top: 3.2rem;
+}
+
+.name {
+	font-weight: 700;
+	color: var(--primary-text-color);
+}
+
+.job {
+	font-weight: 500;
+	color: var(--secondary-text-color);
+}
+
+.slider-box {
+	justify-self: stretch;
+	align-self: stretch;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url(../images/pattern-bg.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.img {
+	position: relative;
+
+	display: inline-block;
+	padding: 37.5%;
+	background-image: url(../images/students.svg);
+	background-repeat: no-repeat;
+	background-size: 206%;
+
+	box-shadow: 0 5rem 4rem -3rem #24247180;
+
+	transition: all 0.5s ease-in-out;
+}
+
+.img-left {
+	background-position: left 0 top 0;
+}
+
+.img-right {
+	background-position: right 0 top 0;
+}
+
+.btn-box {
+	position: absolute;
+	align-self: flex-start;
+	display: flex;
+	bottom: -5%;
+	left: 9%;
+}
+
+.btn {
+	position: relative;
+	overflow: hidden;
+
+	border: none;
+	width: 5.6rem;
+	height: 5.6rem;
+	font-size: 2rem;
+
+	box-shadow: 0 1.5rem 2rem -1rem #24247117;
+}
+
+.btn-right {
+	border-radius: 0 50% 50% 0;
+}
+
+.btn-left {
+	border-radius: 50% 0 0 50%;
+}
+
+.footer {
+	margin: 6.4rem auto 3.2rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	text-decoration: none;
+	font-weight: 700;
+	color: hsl(228, 45%, 44%);
+}
+
+/* Focus */
+
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.3rem #afb6ff;
+}
+
+/**************************/
+/* BELOW 992px (Tablets) */
+/**************************/
+
+@media (max-width: 62em) {
+	.testimonial {
+		width: calc(100% - 32px);
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 1.2rem;
+	}
+	.slider-box {
+		grid-row: 1;
+		align-self: end;
+		min-height: 40rem;
+	}
+	.description {
+		font-size: 1.8rem;
+	}
+
+	.credits {
+		font-size: 1.5rem;
+	}
+
+	.text-box {
+		display: block;
+		margin-right: 0;
+		text-align: center;
+
+		background-position: top 0 left 50%;
+		backface-visibility: hidden;
+	}
+
+	.job {
+		display: block;
+	}
+	.name {
+		display: block;
+	}
+	.img {
+		padding: 29%;
+	}
+
+	.btn-box {
+		bottom: -5.7%;
+		left: 40%;
+	}
+
+	.btn {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+
+/**************************/
+/* BELOW 576px (Mobile) */
+/**************************/
+@media (max-width: 36em) {
+	.slider-box {
+		min-height: 35rem;
+	}
+
+	.btn-box {
+		bottom: -6.7%;
+		left: 37%;
+	}
+}
+
+/**************************/
+/* BELOW 480px (Mobile) */
+/**************************/
+@media (max-width: 30em) {
+	.img {
+		padding: 40%;
+	}
+
+	.btn-box {
+		bottom: -5.7%;
+	}
+}

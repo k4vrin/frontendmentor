@@ -10,6 +10,7 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
     -   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
+    -   [Useful resources](#useful-resources)
 -   [Author](#author)
 
 ## Overview
@@ -30,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--   URL: [Solution](https://github.com/kavrindev/frontendmentor/tree/main/pricingComponent)
--   URL: [Live Site](https://kavrindev.github.io/frontendmentor/pricingComponent/)
+-   [Solution](https://github.com/kavrindev/frontendmentor/tree/main/pricingComponent)
+-   [Live Site](https://kavrindev.github.io/frontendmentor/pricingComponent/)
 
 ## My process
 
@@ -41,6 +42,10 @@ Users should be able to:
 -   CSS custom properties
 -   Flexbox
 -   CSS Grid
+
+### Useful resources
+
+-   [How to Recreate the Ripple Effect of Material Design Buttons](https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/)
 
 ## Author
 
